@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>MediQuanta</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
     <style>
         body { font-family: Arial, sans-serif; background: #f9fefa; margin: 0; }
         .container { max-width: 600px; margin: 30px auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 0 12px #d0e6d3; }
@@ -17,14 +17,14 @@
 <body>
     <div class="container">
         <!-- Main Logo -->
-        <img src="{{ url_for('static', filename='logo.png.png') }}" alt="MediQuanta Logo" class="logo-img">
+        <img src="logo.png" alt="MediQuanta Logo" class="logo-img">
         <h1>MediQuanta</h1>
         <p style="text-align:center; color:#444;">Your trusted platform for Nigerian health information.</p>
         
         <!-- Example of using your Sample Images -->
         <div style="display:flex; justify-content:center; gap:18px; margin:30px 0;">
-            <img src="{{ url_for('static', filename='1st sample.png.png') }}" alt="Sample 1" style="height:80px;">
-            <img src="{{ url_for('static', filename='2nd sample.png.png') }}" alt="Sample 2" style="height:80px;">
+            <img src="1st sample.png" alt="Sample 1" style="height:80px;">
+            <img src="2nd sample.png" alt="Sample 2" style="height:80px;">
         </div>
         
         <!-- Page Content -->
@@ -38,7 +38,7 @@
         <!-- Footer with Logos -->
         <footer>
             <div class="footer-logos">
-                <img src="{{ url_for('static', filename='3MTT footer logo.png.jpg') }}" alt="3MTT Footer Logo" class="footer-logo">
+                <img src="3MTT footer logo.png" alt="3MTT Footer Logo" class="footer-logo">
             </div>
             <p>&copy; 2025 MediQuanta – Nigerian Health Information</p>
         </footer>
