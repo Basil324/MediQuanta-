@@ -1,0 +1,17 @@
+{
+    "english": {
+        "headache": "Take paracetamol and rest. Drink plenty water.",
+        "malaria": "Use antimalarial drugs like ACT. Visit a clinic if serious.",
+        "fever": "Take fever medicine and monitor. If it persists, go to hospital."
+    },
+    "hausa": {
+        "ciwon kai": "Sha paracetamol ka huta. Ka sha ruwa sosai.",
+        "zazzabi": "Yi amfani da maganin zazzabi. Ka ga likita idan ya yi tsanani.",
+        "maleriya": "Yi amfani da maganin maleriya kamar ACT."
+    },
+    "pidgin": {
+        "headache": "Take paracetamol, rest well and drink plenty water.",
+        "malaria": "Use malaria medicine like ACT. If e bad, go clinic.",
+        "fever": "Take medicine wey go reduce fever. If e no stop, go hospital."
+    }
+}
