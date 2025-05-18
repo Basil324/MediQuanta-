@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e6f2f1;
+  color: #333;
+}
+.app-container {
+  max-width: 480px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+}
+.logo {
+  width: 120px;
+}
+.animated {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.nigeria-banner {
+  text-align: center;
+  margin: 20px 0;
+}
+.nigeria-logo {
+  width: 80px;
+}
+.health-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.chat-section {
+  margin-top: 30px;
+}
+.chat-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
