@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MediQuanta</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQuanta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div class="app-container">
-    <header>
-      <img src="3mtt.jpg" alt="3MTT Logo" class="logo animated" />
-      <h1>MediQuanta</h1>
-      <small>Designed by Basil</small>
-    </header>
-    <main>
-      <div class="nigeria-banner">
-        <img src="nigeria_logo.jpg" alt="Nigeria Coat of Arms" class="nigeria-logo" />
-        <p>Adamawa State</p>
-      </div>
-      <div class="welcome-section">
-        <img src="doctor_heart.jpg" alt="Health Image" class="health-image" />
-        <p>Welcome to MediQuanta - A blend of health and tech, made for our people.</p>
-      </div>
-      <div class="chat-section">
-        <div class="chat-box">
-          <p class="bot-message">Hello! I'm MediQuanta. How can I help you today?</p>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="MediQuanta Logo" class="logo-img">
         </div>
-        <input type="text" placeholder="Type your message..." />
-      </div>
-    </main>
-  </div>
+        <!-- App Name and Program -->
+        <div class="branding">
+            <h1 class="app-name">MediQuanta</h1>
+            <div class="program">
+                <span class="program-title">3MTT PROGRAM</span>
+                <span class="designer">Designed by Basil</span>
+            </div>
+        </div>
+        <!-- Welcome Text -->
+        <div class="welcome">
+            <h2>Welcome to MediQuanta - A blend of health and tech, made for our people.</h2>
+        </div>
+        <!-- Language Selection -->
+        <div class="language-selection">
+            <button class="lang-btn" onclick="selectLanguage('english')">English</button>
+            <button class="lang-btn" onclick="selectLanguage('pidgin')">Pidgin</button>
+            <button class="lang-btn" onclick="selectLanguage('hausa')">Hausa</button>
+            <button class="lang-btn" onclick="selectLanguage('yoruba')">Yoruba</button>
+            <button class="lang-btn" onclick="selectLanguage('igbo')">Igbo</button>
+        </div>
+        <!-- Category Buttons -->
+        <div class="category-selection">
+            <button class="cat-btn" onclick="selectCategory('general')">General Health</button>
+            <button class="cat-btn" onclick="selectCategory('firstaid')">First Aid</button>
+            <button class="cat-btn" onclick="selectCategory('consultant')">Health Consultant</button>
+        </div>
+        <!-- Greeting Message -->
+        <div id="greeting"></div>
+        <!-- Chat Box -->
+        <div class="chat-section">
+            <div id="chat-box"></div>
+            <form id="chat-form" onsubmit="sendMessage(event)">
+                <input type="text" id="user-input" placeholder="Type your health question..." autocomplete="off">
+                <button type="submit" class="send-btn">&#9658;</button>
+            </form>
+        </div>
+        <!-- Health Conditions -->
+        <div class="conditions-section">
+            <h3>Common Health Conditions</h3>
+            <div id="conditions-list">
+                <!-- Dynamically filled with JS -->
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-logos">
+                <img src="{{ url_for('static', filename='3mtt-logo.png') }}" alt="3MTT Logo" class="footer-logo">
+                <img src="{{ url_for('static', filename='nigeria-logo.png') }}" alt="Nigerian Health Info Logo" class="footer-logo">
+            </div>
+            <p>&copy; 2025 MediQuanta – Nigerian Health Information</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
+      
