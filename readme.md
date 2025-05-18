@@ -26,9 +26,10 @@ MediQuanta is a community-focused web app that:
 
 ---
 
-## Live Demo
+## Live Demo video
 
-Try it here: [MediQuanta on Replit](https://replit.com/@your-demo-link) *(Replace with your actual link)*
+[https://drive.google.com/file/d/18vv4b\_upF0NrzErm8KeArsN2Onv\_HjKp/view?usp=drivesdk](https://drive.google.com/file/d/18vv4b_upF0NrzErm8KeArsN2Onv_HjKp/view?usp=drivesdk)
+
 
 ---
 
@@ -86,8 +87,6 @@ This project is licensed under the MIT License. You’re free to use, share, and
 ---
 
 ## Acknowledgements
-
-- **3MTT Program** by the Nigerian Government  
-- **OpenAI ChatGPT** for development and language support  
-- **Community Health Workers** and local knowledge sources  
+ Am thanking
+- **3MTT Program** by the Nigerian Government for the opportunity  
 - **Darey.io** for learning support and career guidance
